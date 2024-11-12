@@ -284,6 +284,53 @@ h1{
             
         }
  }
+ @media (min-width: 426px){
+
+    .header{
+        width: 100%;
+        
+        margin-top: 10px;
+        background-color: pink;
+        display: flex;
+        justify-content: space-evenly; 
+        align-items: flex-start; 
+        height: 70px;
+    
+    }
+    
+    
+    
+    .header .logo img{
+        height: 75px;
+        width: auto;
+        
+    }
+    
+    
+    
+    .header .navlinks li{
+        
+        padding: 3px;
+        
+        
+        
+    
+    
+    }
+    
+    
+    
+    .header .navlinks a{
+        font-size: 14px;
+        
+    }
+    .titulo{
+        background-color: white;
+        width: 250px;
+        
+    }
+
+}
 
 @media (max-width: 425px){
 
