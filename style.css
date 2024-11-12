@@ -237,7 +237,7 @@ h1{
     margin-left: 40px;
 }
 
-@media (max-width: 768px){
+@media (min-width: 768px){
 
 
     .header{
