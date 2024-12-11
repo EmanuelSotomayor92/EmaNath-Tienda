@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EmaNath Detalles Creativos</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/141506cf9a.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -16,14 +17,19 @@
             <a href="index.html"><img src="Imagenes/Logo copia v2.png" alt="Emanath"></a>
         </div>
 
-        <nav>
+        <nav id="nav">
 
             <ul class="navlinks">
 
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="quienes.html">Quienes Somos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                
+                <li><a href="contacto.html" >Contacto</a></li>
+                <!-- <input type="checkbox" id="checkLuna" onclick="enableDark()"> -->
+                <li><button class="botonModo" id="botonModo">
+                    <span><i class="fa-solid fa-sun"></i></span>
+                    <span><i class="fa-solid fa-moon"></i></span>
+                    
+                </button></li>
 
             </ul>
 
@@ -31,7 +37,7 @@
 
 
 
-
+        
     </header>
 
 
@@ -52,9 +58,20 @@
         </nav> -->
     
 
-    <main>
+    <main id="main">
+        <input type="text" id="inputNombre" placeholder="Nombre">
+        <input type="text" id="inputApellido" placeholder="Apellido">
+        <button onclick="botonNombre()" type="button">Listo!</button><br>
+        <!-- <button id="luna"  onclick="modoOscuro()">Luna</button> -->
         
-            <h1>EmaNath Detalles Creativos</h1>
+            
+        
+        
+        
+        
+        <h1 id="tituloindex" onclick="cartelBienvenida()">EmaNath Detalles Creativos</h1>
+
+
         <p style="font-size: 40px;">Hacemos productos estampados, perfectos para darte un gusto o para regalar a quien más querés
             Llaveros, mousepads, packs de stickers, estampados sobre madera MDF y muchas cosas más.
             Seguro algo te llevas.
@@ -75,7 +92,7 @@
     
             <div class="mainhijo">
                 <img src="Imagenes/mousepadpoke2b.jpg" alt="MousepadCharmander">
-                <h3>Mousepad Bulbasaur</h3>
+                <h3>Mousepad Charmander</h3>
             </div>
         
     
@@ -134,7 +151,7 @@
         </div>
       
         <div class="titulo">
-            <h2>Regalos Especiales</h2>
+            <h2 id="especiales">Regalos Especiales</h2>
         </div>
 
         <div class="mainpadre">
@@ -208,7 +225,7 @@
     <br>
     <br>
     <br>
-    <footer style="background-color: pink;">
+    <footer class="footer" >
         <p>©EmaNath 2024 Todos los derechos reservados <br>
             <br>
             Sitio en Desarrollo</p> 
@@ -216,6 +233,6 @@
 
     </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html> 
