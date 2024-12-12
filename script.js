@@ -12,14 +12,14 @@
 
 
 
-// let nombreCapturado = document.getElementById("inputNombre")
-// let apellidoCapturado = document.getElementById("inputApellido")
+ let nombreCapturado = document.getElementById("inputNombre")
+ let apellidoCapturado = document.getElementById("inputApellido")
 
-// function botonNombre(){
+ function botonNombre(){
 
-//     console.log (nombreCapturado.value)
-//     console.log (apellidoCapturado.value)
-// }
+    console.log (nombreCapturado.value)
+  console.log (apellidoCapturado.value)
+}
 
 
 // let mainOscuro= document.getElementById("main")
