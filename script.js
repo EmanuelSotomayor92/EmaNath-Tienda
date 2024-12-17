@@ -12,15 +12,47 @@
 
 
 
- let nombreCapturado = document.getElementById("inputNombre")
- let apellidoCapturado = document.getElementById("inputApellido")
+//  let nombreCapturado = document.getElementById("inputNombre")
+//  let apellidoCapturado = document.getElementById("inputApellido")
 
- function botonNombre(){
+//  function botonNombre(){
 
-    console.log (nombreCapturado.value)
-  console.log (apellidoCapturado.value)
-}
+//     console.log (nombreCapturado.value)
+//   console.log (apellidoCapturado.value)
+// }
 
+// let nombreCapturado = document.getElementById("inputNombre")
+// let apellidoCapturado = document.getElementById("inputApellido")
+// // let nombreCompleto = nombreCapturado + apellidoCapturado
+// // console.log (nombreCompleto.value)
+
+// function botonNombre(nombre,apellido){
+    
+//     //  console.log ("Bienvenido: "+(nombreCapturado.value) + " " + (apellidoCapturado.value))
+//     // alert ("Hola" + nombreCapturado + apellidoCapturado )
+//     // console.log(nombreCapturado.value)
+//     alert("Hola " + nombre +" "+ apellido)
+//     document.write ("Hola " + nombre +" "+ apellido)
+    
+     
+     
+ 
+// }
+
+// let nombreUsuario = prompt("Ingresa tu Nombre:")
+// let apellidoUsario = prompt("Ingresa tu Apellido:")
+// let fullName =
+
+// botonNombre(nombreUsuario, apellidoUsario)
+
+
+// function saludarUsuario() {
+
+//     document.write("Bienvenido: "+(nombreCapturado.value) + " " + (apellidoCapturado.value))
+
+// }
+
+// saludarUsuario() 
 
 // let mainOscuro= document.getElementById("main")
 
@@ -41,6 +73,50 @@
     
 
 //    }
+
+
+// ---------------------Nombre de Uusario---------------------------------
+
+// let nombreA = document.getElementById("inputA") 
+
+
+// function usuario(){
+     
+//     console.log((nombreA.value))
+//     document.getElementById("h2Usuario").textContent =(("Bienvenido ") + (nombreA.value))
+    
+    
+// }
+
+
+// ------------------------------------------------------------------------
+
+
+let h2Bienvenido = document.getElementById("h2Bienvenido")
+let inputNombre = document.getElementById("inputNombre")
+let inputApellido = document.getElementById("inputApellido")
+let usuario = document.getElementById("usuario")
+
+usuario.addEventListener("click",function(){
+
+    console.log(inputNombre.value)
+    console.log(inputApellido.value)
+
+    h2Bienvenido.textContent=(("Bienvenido ") + (inputNombre.value) + (" ") + (inputApellido.value))
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const boton = document.querySelector("#botonModo");
@@ -68,3 +144,33 @@ if (localStorage.getItem("darkMode") == "true"){
     boton.classList.remove("activo");
 
 }
+
+// -----------------------------------------------------------------------------------------------------
+
+
+
+// const boton2 = document.querySelector("#botonNombre");
+
+// boton2.addEventListener("click",() =>{
+//     document.body.classList.toggle("registrado");
+//     boton2.classList.toggle("activo");
+
+
+//     // ----------Guardado Local----------
+    
+//     if (document.body.classList.contains("registrado")){
+//         localStorage.setItem("usuariobienvenido" , "true")
+//         } else{
+//             localStorage.setItem("usuariobienvenido" , "false")
+//         }
+
+// })
+
+// if (localStorage.getItem("usuariobienvenido") == "true"){
+//     document.body.classList.add("registrado");
+//     boton2.classList.add("activo");
+// } else{
+//     document.body.classList.remove("registrado")
+//     boton2.classList.remove("activo");
+
+// }
