@@ -372,8 +372,8 @@ h1{
     justify-content: center;
     transition: 2s;
     position: relative;
-    left: 95%;
-    transform: translateX(-95%);
+    left: 50%;
+    transform: translateX(-50%);
     
 
 }
@@ -383,7 +383,7 @@ h1{
 
 #h2API{
 
-    margin-top: 100px;
+    /* margin-top: 80px; */
     text-align: center;
     
 }
@@ -406,6 +406,7 @@ h1{
     border-radius: 10% 25%;
     box-shadow: 10px 5px 10px 3px grey;
     transition: 1s;
+    margin-bottom: 20px;
 
     
     
@@ -494,6 +495,41 @@ h4{
         width: 20px;
         height: 10px;
         
+        
+    }
+    
+    /* -----------------API--------------------- */
+
+    #probandoAPI{
+    
+    
+        padding-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 3px beige;
+        width: 100px;
+        height: 100px;
+        
+        border-radius: 10% 25%;
+        box-shadow: 10px 5px 10px 3px grey;
+        transition: 1s;
+        
+        
+        
+    
+    }
+
+    #probandoAPI img{
+        border-radius: 50%;
+        width: 50px;
+    
+    }
+
+    h4{
+
+        font-size: 10px;
         
     }
 
@@ -1062,6 +1098,88 @@ h4{
     .textoBienvenida{
         font-size: 40px;
     }
+/* -----------------------------STYLE API----------------------------------- */
 
+
+#contenedorprobandoApi{
+    
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+}
+
+
+    
+
+#h2API{
+
+    /* margin-top: 80px; */
+    text-align: center;
+    
+}
+
+
+
+
+#probandoAPI{
+    
+    
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 3px beige;
+    width: 250px;
+    height: 250px;
+    
+    border-radius: 10% 25%;
+    box-shadow: 10px 5px 10px 3px grey;
+    transition: 1s;
+    margin-bottom: 20px;
+
+    
+    
+
+}
+
+#probandoAPI:hover{
+    transform: scale(0.8);
+}
+
+
+
+#probandoAPI img{
+    border-radius: 50%;
+
+}
+
+#probandoAPI #div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+body.oscuro #probandoAPI{
+    background-color: pink;
+    transition: 2s ease;
+}
+
+h4{
+
+    font-size: 20px;
+    
+}
+
+/* ------------------------------------------------ */
     
 }
