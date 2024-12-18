@@ -92,19 +92,19 @@
 // ------------------------------------------------------------------------
 
 
-let h2Bienvenido = document.getElementById("h2Bienvenido")
-let inputNombre = document.getElementById("inputNombre")
-let inputApellido = document.getElementById("inputApellido")
-let usuario = document.getElementById("usuario")
+// let h2Bienvenido = document.getElementById("h2Bienvenido")
+// let inputNombre = document.getElementById("inputNombre")
+// let inputApellido = document.getElementById("inputApellido")
+// let usuario = document.getElementById("usuario")
 
-usuario.addEventListener("click",function(){
+// // usuario.addEventListener("click",function(){
 
-    console.log(inputNombre.value)
-    console.log(inputApellido.value)
+// //     console.log(inputNombre.value)
+// //     console.log(inputApellido.value)
 
-    h2Bienvenido.textContent=(("Bienvenido ") + (inputNombre.value) + (" ") + (inputApellido.value))
+// //     h2Bienvenido.textContent=(("Bienvenido ") + (inputNombre.value) + (" ") + (inputApellido.value))
     
-})
+// // })
 
 
 
@@ -149,28 +149,73 @@ if (localStorage.getItem("darkMode") == "true"){
 
 
 
-// const boton2 = document.querySelector("#botonNombre");
-
-// boton2.addEventListener("click",() =>{
-//     document.body.classList.toggle("registrado");
-//     boton2.classList.toggle("activo");
 
 
-//     // ----------Guardado Local----------
+
+//-------------------------------------- API-----------------------------------------------------------------
+
+
+let probandoAPI = document.getElementById("probandoAPI")
+console.log(probandoAPI)
+
+let fotoAPI = document.getElementById("fotoAPI")
+
+
+
+fetch("https://randomuser.me/api/")
+.then((respuesta) => respuesta.json())
+.then((datos) => {
+
+    console.log(datos)
+    console.log(datos.reults)
+    console.log(datos.results[0])
+    console.log(datos.results[0].name.first)
+
+  
+
+
+    datos.results.forEach(elemento => {
+
+        console.log((elemento.name.first + (" ") + elemento.name.last))
+        console.log((elemento.location.city) + (": ") + (elemento.location.country))
+        console.log(elemento.picture.large)
+        
+        
+        const contenedorAPI = document.createElement("div")
+
+        contenedorAPI.innerHTML= `
+        
+        <h4> ${(elemento.name.first + (" ") + elemento.name.last)} </h4>
+         
+        
+        <img src="${elemento.picture.large}">
+       
+
+        <h4> ${elemento.location.city + (": ") + elemento.location.country}</h4>
+
+        
+        
+        `;
+        
+
+         probandoAPI.append(contenedorAPI)
+
+
+
     
-//     if (document.body.classList.contains("registrado")){
-//         localStorage.setItem("usuariobienvenido" , "true")
-//         } else{
-//             localStorage.setItem("usuariobienvenido" , "false")
-//         }
 
-// })
 
-// if (localStorage.getItem("usuariobienvenido") == "true"){
-//     document.body.classList.add("registrado");
-//     boton2.classList.add("activo");
-// } else{
-//     document.body.classList.remove("registrado")
-//     boton2.classList.remove("activo");
+    });
 
-// }
+
+    
+
+
+    
+
+
+
+})
+
+
+
